@@ -48,8 +48,11 @@ services:
       - elasticsearch
     ports:
       - '5601:5601'
+    env_file:
+      - .env
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      # - ELASTICSEARCH_PASSWORD=${ELASTICSEARCH_PASSWORD}
   
   pgsync:
     image: pgsync
