@@ -1,0 +1,111 @@
+[
+  {
+    "database": "postgres",
+    "index": "venya-database",
+    "nodes": {
+      "children": [
+        {
+          "children": [
+            {
+              "columns": [
+                "id",
+                "title",
+                "description"
+              ],
+              "relationship": {
+                "through_tables": [
+                  "properties_experiences"
+                ],
+                "type": "one_to_many",
+                "variant": "object"
+              },
+              "schema": "public",
+              "table": "experiences"
+            }
+          ],
+          "columns": [
+            "no_of_beds",
+            "no_of_bathrooms",
+            "pincode",
+            "no_of_guests",
+            "maximum_number_of_adult",
+            "maximum_number_of_children",
+            "maximum_no_of_pets",
+            "maximum_no_of_infants",
+            "is_featured_villa",
+            "check_in",
+            "check_out",
+            "latitude",
+            "longitude",
+            "updated_at",
+            "property_price_per_night",
+            "discount",
+            "cleaning_price",
+            "isPropertyActive",
+            "min_nights",
+            "created_at",
+            "no_of_bedrooms",
+            "featured_villa_image",
+            "map_image",
+            "propertyStatus",
+            "id",
+            "uploadPropertyBrochure",
+            "parent_property",
+            "title",
+            "description",
+            "cover_image",
+            "concierge_number",
+            "street_name",
+            "area_name",
+            "directions_to_reach",
+            "landmark",
+            "google_map_link",
+            "vr_link",
+            "additional_rules",
+            "explain_why_different",
+            "status",
+            "city_id",
+            "continent_id",
+            "country_id",
+            "owner_id",
+            "property_type_id",
+            "state_id"
+          ],
+          "relationship": {
+            "type": "one_to_many",
+            "variant": "object"
+          },
+          "schema": "public",
+          "table": "properties"
+        }
+      ],
+      "columns": [
+        "is_blocked",
+        "is_staff",
+        "date_of_birth",
+        "created_at",
+        "updated_at",
+        "is_superuser",
+        "is_mobile_verified",
+        "is_owner",
+        "last_login",
+        "is_active",
+        "city",
+        "gender",
+        "contact_number",
+        "short_description",
+        "id",
+        "email",
+        "mobile",
+        "name",
+        "first_name",
+        "last_name",
+        "profile_picture",
+        "address_line_1",
+        "address_line_2"
+      ],
+      "schema": "public",
+      "table": "users"
+    }
+  }
+]
