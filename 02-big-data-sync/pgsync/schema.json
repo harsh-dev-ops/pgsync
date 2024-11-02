@@ -3,6 +3,8 @@
     "database": "postgres",
     "index": "venya-database",
     "nodes": {
+      "schema": "public",
+      "table": "users",
       "children": [
         {
           "children": [
@@ -103,9 +105,7 @@
         "profile_picture",
         "address_line_1",
         "address_line_2"
-      ],
-      "schema": "public",
-      "table": "users"
+      ]
     }
   }
 ]
